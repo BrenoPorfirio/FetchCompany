@@ -1,0 +1,40 @@
+{
+  "name": "hub-local-proj-front",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@hookform/resolvers": "^2.9.11",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/lab": "^5.0.0-alpha.123",
+    "@mui/material": "^5.11.13",
+    "axios": "^1.3.4",
+    "create-vite": "^5.0.0",
+    "framer-motion": "^10.5.0",
+    "nookies": "^2.5.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.7",
+    "react-input-mask": "^2.0.4",
+    "react-router-dom": "^6.9.0",
+    "react-toastify": "^9.1.1",
+    "styled-components": "^5.3.9",
+    "yup": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/styled-components": "^5.1.26",
+    "@vitejs/plugin-react": "^3.1.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0"
+  }
+}
