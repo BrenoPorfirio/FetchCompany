@@ -10,10 +10,14 @@ export function Header() {
             </div>
             <div className="right-content">
                 <a href="" >
-                    Sobre
+                    <strong>
+                        Sobre
+                    </strong>
                 </a>
                 <a href="">
-                    Contatos
+                    <strong>
+                        Contatos
+                    </strong>
                 </a>
             </div>
 
