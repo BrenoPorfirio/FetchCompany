@@ -1,4 +1,4 @@
-import { HeaderContainer } from "./styles/infoPage";
+import { HeaderContainer } from "./styles/header";
 
 export function Header() {
     return (
