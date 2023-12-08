@@ -17,7 +17,7 @@ export const AuthPage = () => {
         <div className="hubDescription">
           <strong>Junte-se a vários clientes satisfeitos.</strong>
           <p>
-            Cliente HubLocal ganha mais relevância, autoridade e visibilidade.
+            Cliente FetchCompany ganha mais relevância, autoridade e visibilidade.
             Mais de 7.000 marcas confiam na nossa plataforma. Seja uma delas!
           </p>
         </div>
