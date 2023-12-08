@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     background-color: var(--hub-green); 
+    overflow: hidden;
 
     .content-container {
         display: flex;
@@ -19,8 +20,13 @@ export const Container = styled.div`
         text-align: center;
         width: 30%;
         margin: 10px; 
-        font-size: 16px;
         font-weight: bold;
         color: var(--hub-blue); 
+        transition: transform 0.3s ease;
+    }
+
+    .text-container:hover {
+        cursor: none;
+        transform: scale(1.1); 
     }
 `;
