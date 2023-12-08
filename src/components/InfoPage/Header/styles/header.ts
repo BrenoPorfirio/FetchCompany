@@ -32,7 +32,6 @@ export const HeaderContainer = styled.header`
     a:hover {
       background: var(--hub-blue);
       color: white; 
-      
     }
   }
 `;
