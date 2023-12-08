@@ -1,4 +1,4 @@
-import { Container } from '../Content/styles/content';
+import { Container, StartNowButton } from '../Content/styles/content';
 import UsersThree from "../../../assets/users-three.svg"
 import ArrowFatRight from "../../../assets/arrow-fat-right.svg"
 import Archive from "../../../assets/archive.svg"
@@ -24,10 +24,10 @@ export function Content() {
                     </div>
                 ))}
                 <div>
-                    <button>
-                        <img src={ArrowFatRight} />
+                    <StartNowButton>
                         Começar agora
-                    </button>
+                        <img src={ArrowFatRight} height={26} />
+                    </StartNowButton>
                 </div>
             </div>
         </Container>
