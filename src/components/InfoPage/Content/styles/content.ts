@@ -36,3 +36,20 @@ export const Container = styled.div`
         transform: scale(1.1);
     }
 `;
+
+export const StartNowButton = styled.button`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--hub-blue);
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s, color 0.3s;
+    
+    :hover {
+        transform: scale(1.1);
+    }
+`
