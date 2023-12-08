@@ -33,6 +33,7 @@ export const HeaderContainer = styled.header`
       background: var(--hub-blue);
       color: white; 
       border: 1px solid white;
+      padding: 7px;
     }
   }
 `;
