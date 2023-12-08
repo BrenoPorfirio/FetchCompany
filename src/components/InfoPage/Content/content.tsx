@@ -1,4 +1,5 @@
 import { Container } from '../Content/styles/content';
+import UsersThree from "../../../assets/users-three.svg"
 
 export function Content() {
     const texts =
@@ -10,6 +11,7 @@ export function Content() {
 
     return (
         <Container>
+            <img src={UsersThree} />
             <div className="content-container">
                 {texts.map((text, index) => (
                     <div key={index} className="text-container" >
