@@ -1,5 +1,6 @@
 import { Container } from '../Content/styles/content';
 import UsersThree from "../../../assets/users-three.svg"
+import ArrowFatRight from "../../../assets/arrow-fat-right.svg"
 
 export function Content() {
     const texts =
@@ -18,7 +19,12 @@ export function Content() {
                         {text}
                     </div>
                 ))}
-                <button></button>
+                <div>
+                    <button>
+                        <img src={ArrowFatRight} />
+                        Começar agora
+                    </button>
+                </div>
             </div>
         </Container>
     );
