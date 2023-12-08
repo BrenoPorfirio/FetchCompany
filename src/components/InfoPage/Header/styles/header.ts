@@ -2,17 +2,17 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
   color: var(--hub-blue);
-  background-color: var(--hub-green);
+  background-color: var(--hub-blue);
 
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border-bottom: 2px solid white;
-  
+  box-sizing: border-box;
+  width: 100%; 
 
   .left-content {
-    background-color: lightgray;
+    background-color: white;
     padding: 8px; 
     border-radius: 8px;
   }
@@ -22,7 +22,7 @@ export const HeaderContainer = styled.header`
     align-items: center;
 
     a {
-      background-color: lightgray; 
+      background-color: white; 
       margin-left: 10px; 
       text-decoration: none;
       color: var(--hub-blue);
@@ -32,6 +32,7 @@ export const HeaderContainer = styled.header`
     a:hover {
       background: var(--hub-blue);
       color: white; 
+      border: 1px solid white;
     }
   }
 `;

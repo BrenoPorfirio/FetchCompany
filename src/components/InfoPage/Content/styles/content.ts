@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    background-color: var(--hub-green);
+    background-color: white;
     overflow: hidden;
 
     .content-container {
@@ -15,13 +15,17 @@ export const Container = styled.div`
 
     .text-container {
         border-radius: 8px;
-        background-color: lightgray;
+        background-color: var(--hub-blue);
         padding: 20px;
         text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        min-height: 150px;
         width: 30%;
         margin: 10px;
         font-weight: bold;
-        color: var(--hub-blue);
+        color: white;
         transition: transform 0.2s, background 0.3s, color 0.3s;
     }
 
