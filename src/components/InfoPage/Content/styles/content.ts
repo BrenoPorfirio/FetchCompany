@@ -56,20 +56,6 @@ export const StartNowButton = styled.button`
     cursor: pointer;
     position: relative; 
     transition: transform 0.2s, background 0.3s, color 0.3s;
-    
-    ::before {
-        content: ' ';
-        position: absolute;
-        right: 5px;
-        opacity: 0;
-        transition: opacity 0.3s;
-        font-size: 30px;
-    }
-
-    :hover::before {
-        content: '>'; 
-        opacity: 1;
-    }
 
     :hover {
         transform: scale(1.1);
