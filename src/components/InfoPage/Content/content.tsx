@@ -1,32 +1,27 @@
 import { Container, StartNowButton } from '../Content/styles/content';
-import UsersThree from "../../../assets/users-three.svg"
-import ArrowFatRight from "../../../assets/arrow-fat-right.svg"
-import Archive from "../../../assets/archive.svg"
-import Build from "../../../assets/buildings.svg"
+import { UsersThree, Buildings, Archive, ArrowFatRight } from 'phosphor-react';
 
 export function Content() {
-    const texts =
-        [
-            "Desperte o Poder do Controle: Gerencie usuários com eficiência, empresas com maestria e transforme a gestão para o próximo nível!",
-            "Domine o Mundo Empresarial: Usuários empoderados, empresas otimizadas, gestão aprimorada. Seu sucesso começa aqui!",
-            "Enfrente Desafios com Confiança: usuários, empresas, excelência em cada detalhe. Domine o poder do gerenciamento e supere os obstáculos com facilidade!"
-        ];
+    const contentItems = [
+        { text: "Desperte o Poder do Controle: Gerencie usuários com eficiência, empresas com maestria e transforme a gestão para o próximo nível! ", icon: <UsersThree size={32} color="#000" /> },
 
+        { text: "Domine o Mundo Empresarial: Usuários empoderados, empresas otimizadas, gestão aprimorada. Seu sucesso começa aqui! ", icon: <Buildings size={32} color="#000" /> },
+
+        { text: "Enfrente Desafios com Confiança: usuários, empresas, excelência em cada detalhe. Domine o poder do gerenciamento e supere os obstáculos com facilidade! ", icon: <Archive size={32} color="#000" /> }
+    ];
     return (
         <Container>
-            <img src={UsersThree} />
-            <img src={Build} />
-            <img src={Archive} />
             <div className="content-container">
-                {texts.map((text, index) => (
-                    <div key={index} className="text-container" >
-                        {text}
+                {contentItems.map((item, index) => (
+                    <div key={index} className="text-container">
+                        {item.icon}
+                        {item.text}
                     </div>
                 ))}
-                <div>
+                <div className="start-now-container">
                     <StartNowButton>
                         Começar agora
-                        <img src={ArrowFatRight} height={26} />
+                        <ArrowFatRight size={26} color="#000" />
                     </StartNowButton>
                 </div>
             </div>

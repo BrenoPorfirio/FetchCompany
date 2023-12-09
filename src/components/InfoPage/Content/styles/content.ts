@@ -3,23 +3,30 @@ import styled from "styled-components";
 export const Container = styled.div`
     background-color: white;
     overflow: hidden;
+    
+    .text-container,
+    .icon-container {
+    width: 200px; /* ou o valor desejado */
+    height: 200px; /* ou o valor desejado */
+}
 
     .content-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        align-items: center;
+        align-items: center; 
         height: 91.5vh;
         padding: 20px;
     }
 
     .text-container {
         border-radius: 8px;
+        flex-direction: column;
         background-color: var(--hub-blue);
         padding: 20px;
         text-align: center;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         display: flex;
         min-height: 150px;
         width: 30%;
