@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { Container, StartNowButton } from '../Content/styles/content';
-import { UsersThree, Buildings, Archive, ArrowFatRight } from 'phosphor-react';
+import { UsersThree, Buildings, Archive } from 'phosphor-react';
 
 export function Content() {
 
@@ -28,7 +28,6 @@ export function Content() {
                 <div className="start-now-container">
                     <StartNowButton onClick={handleStartNowClick}>
                         Começar agora
-                        <ArrowFatRight size={26} color="#000" />
                     </StartNowButton>
                 </div>
             </div>
