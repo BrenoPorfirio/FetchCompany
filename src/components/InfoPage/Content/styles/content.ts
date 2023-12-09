@@ -6,8 +6,8 @@ export const Container = styled.div`
     
     .text-container,
     .icon-container {
-    width: 200px; /* ou o valor desejado */
-    height: 200px; /* ou o valor desejado */
+    width: 200px; 
+    height: 200px; 
 }
 
     .content-container {
@@ -51,12 +51,27 @@ export const StartNowButton = styled.button`
     background: var(--hub-blue);
     color: white;
     font-weight: bold;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 8px;
     cursor: pointer;
+    position: relative; 
     transition: transform 0.2s, background 0.3s, color 0.3s;
     
+    ::before {
+        content: ' ';
+        position: absolute;
+        right: 5px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        font-size: 30px;
+    }
+
+    :hover::before {
+        content: '>'; 
+        opacity: 1;
+    }
+
     :hover {
         transform: scale(1.1);
     }
-`
+`;
