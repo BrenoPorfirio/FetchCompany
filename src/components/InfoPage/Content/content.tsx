@@ -1,7 +1,14 @@
+import { useNavigate } from 'react-router-dom';
 import { Container, StartNowButton } from '../Content/styles/content';
 import { UsersThree, Buildings, Archive, ArrowFatRight } from 'phosphor-react';
 
 export function Content() {
+
+    const navigate = useNavigate();
+    const handleStartNowClick = () => {
+        navigate('/auth/*');
+    };
+
     const contentItems = [
         { text: "Desperte o Poder do Controle: Gerencie usuários com eficiência, empresas com maestria e transforme a gestão para o próximo nível! ", icon: <UsersThree size={32} color="#000" /> },
 
@@ -19,7 +26,7 @@ export function Content() {
                     </div>
                 ))}
                 <div className="start-now-container">
-                    <StartNowButton>
+                    <StartNowButton onClick={handleStartNowClick}>
                         Começar agora
                         <ArrowFatRight size={26} color="#000" />
                     </StartNowButton>
