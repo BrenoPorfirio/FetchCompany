@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     background-color: white;
-    overflow: hidden;
+
     
     .text-container,
     .icon-container {
@@ -34,6 +34,25 @@ export const Container = styled.div`
         font-weight: bold;
         color: white;
         transition: transform 0.2s, background 0.3s, color 0.3s;
+
+        @media (max-width: 1080px) {
+        min-height: 20vw; 
+        width: 85%;
+    }   
+
+        @media (max-width: 720px) {
+            min-height: 30vw; 
+            width: 100%;
+        }
+
+        .start-now-container {
+            margin-top: 20px; /* ou o valor desejado */
+            width: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+    }
+
     }
 
     .text-container:hover {
@@ -56,6 +75,33 @@ export const StartNowButton = styled.button`
     cursor: pointer;
     position: relative; 
     transition: transform 0.2s, background 0.3s, color 0.3s;
+   
+    ::after{
+        content: ' ';
+        position: absolute;
+        left: 5px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        font-size: 30px;
+    }
+    :hover::after{
+        content: '>'; 
+        opacity: 1;
+    }
+
+    ::before {
+        content: ' ';
+        position: absolute;
+        right: 5px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        font-size: 30px;
+    }
+
+    :hover::before {
+        content: '<'; 
+        opacity: 1;
+    }
 
     :hover {
         transform: scale(1.1);
