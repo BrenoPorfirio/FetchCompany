@@ -1,12 +1,18 @@
 import { useNavigate } from 'react-router-dom';
 import { Container, StartNowButton } from '../Content/styles/content';
 import { UsersThree, Buildings, Archive } from 'phosphor-react';
+import { useState } from 'react';
 
 export function Content() {
 
     const navigate = useNavigate();
+    const [loading, setLoading] = useState(false);
     const handleStartNowClick = () => {
-        navigate('/auth/*');
+        setLoading(true);
+        setTimeout(() => {
+            navigate('/auth/*');
+            setLoading(false);
+        }, 1000);
     };
 
     const contentItems = [
@@ -26,8 +32,8 @@ export function Content() {
                     </div>
                 ))}
                 <div className="start-now-container">
-                    <StartNowButton onClick={handleStartNowClick}>
-                        Começar agora
+                    <StartNowButton onClick={handleStartNowClick} disabled={loading}>
+                        {loading ? 'Aguarde...' : 'Começar agora'}
                     </StartNowButton>
                 </div>
             </div>
