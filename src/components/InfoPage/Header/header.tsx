@@ -9,7 +9,7 @@ export function Header() {
                 </strong>
             </div>
             <div className="right-content">
-                <a href="" >
+                <a href="https://github.com/BrenoPorfirio/FetchCompany.git" target="_blank">
                     <strong>
                         Sobre
                     </strong>
