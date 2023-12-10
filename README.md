@@ -1,0 +1,63 @@
+<h1 align="center"> FetchCompany </h1>
+
+<p align="center">
+Programa exclusivo promovido para apresentação da 3° unidade da matéria programação web
+</p>
+
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-execução">Execução</a>
+</p>
+
+<br>
+<p align="center">
+  
+</p>
+
+## 🚀 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- React + Vite
+- TypeScript
+- Git e Github
+- Figma
+
+## 💻 Projeto
+
+O FetchCompany é um programa que se assemelha a . 
+
+## :memo: Execução
+
+Siga abaixo os seguinte passos para execução do código:
+
+1. Clone o repositório utilizando:
+
+```bash
+  git clone https://github.com/BrenoPorfirio/FetchCompany.git
+```
+
+2. Agora, vá para o diretório na sua IDE utilizando:
+
+```bash
+  cd FetchCompany
+```
+
+3. Instale todas as dependências necessárias utilizando:
+
+```bash
+  npm install 
+```
+
+4. É necessário que seja iniciado o server para uso do programa, então:
+
+```bash
+  
+```
+
+5. Agora, basta executar o comando para rodar o projeto:
+
+```bash
+  npm run dev
+```
