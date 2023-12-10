@@ -86,7 +86,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
     destroyCookie(undefined, "hubLocalAuth.refreshToken");
     localStorage.removeItem("@hubLocal-user");
 
-    navigate("/");
+    navigate("/auth/*");
   }
   return (
     <AuthContext.Provider value={{ signIn, isAuthenticated, user, signOut }}>
