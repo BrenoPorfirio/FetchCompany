@@ -41,7 +41,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
       navigate("/app");
     } else {
       setUser(null);
-      navigate("/");
+      navigate("/auth/*");
     }
   }, []);
 
@@ -61,7 +61,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
       setCookie(undefined, "hubLocalAuth.token", token, {
         maxAge: 60 * 60 * 24 * 30,
-        path: "/",
+        path: "/auth/*",
       });
       /* setCookie(undefined, "hubLocalAuth.refreshToken", refreshToken, {
         maxAge: 60 * 60 * 24 * 30,
@@ -76,7 +76,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
     } catch (err) {
       toast.error("Credenciais inválidas");
       setUser(null);
-      navigate("/");
+      navigate("/auth/*");
       console.log(err);
     }
   }
