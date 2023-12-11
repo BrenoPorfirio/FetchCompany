@@ -12,7 +12,7 @@ Programa exclusivo promovido para apresentação da 3° unidade da matéria prog
 
 <br>
 <p align="center">
-  
+  <img alt="FetchCompanyLogo" src="https://github.com/BrenoPorfirio/FetchCompany/assets/112186428/d1d3d43d-20b3-47d5-b0e1-abbff882b7c1" width="10%">
 </p>
 
 ## 🚀 Tecnologias
