@@ -34,6 +34,7 @@ export const HeaderContainer = styled.header`
       color: white; 
       border: 1px solid white;
       padding: 7px;
+      transition: color 0.3s ease-in-out;
     }
   }
 `;

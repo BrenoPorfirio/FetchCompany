@@ -1,6 +1,10 @@
-export function About(){
+import React from "react";
+import Voltar from "../../BackButton/BackButton";
+
+export function About() {
   return (
     <div className="container">
+      <Voltar />
       <h1>Contatos</h1>
       <table>
         <thead>
@@ -98,6 +102,7 @@ export function About(){
         a:hover {
           color: #0385FD;
         }
+
       `}</style>
     </div>
   );

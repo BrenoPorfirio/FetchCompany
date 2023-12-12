@@ -5,7 +5,7 @@ import { AuthPage } from "../pages/AuthPage/AuthPage";
 import { protectedRoutes } from "./protected";
 import { publicRoutes } from "./public";
 import { InfoPage } from "../components/InfoPage/infoPage";
-import { About } from "../components/InfoPage/Header/about";
+import { About } from "../components/InfoPage/About/about";
 
 export const AppRoutes = () => {
   const { user } = useContext(AuthContext);

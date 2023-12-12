@@ -9,6 +9,7 @@ import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useContext } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
+import Voltar from "../BackButton/BackButton";
 
 const schema = Yup.object().shape({
   email: Yup.string()
@@ -84,7 +85,7 @@ export const Login = ({ handleToggleMode }: LoginProps) => {
             />
           )}
         />
-
+        <Voltar />
         <LoadingButton type="submit" variant="outlined" loading={isSubmitting}>
           Logar
         </LoadingButton>
