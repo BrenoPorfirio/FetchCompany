@@ -41,7 +41,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
       navigate("/app");
     } else {
       setUser(null);
-      navigate("/auth/*");
+      navigate("/");
     }
   }, []);
 
@@ -61,7 +61,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
       setCookie(undefined, "hubLocalAuth.token", token, {
         maxAge: 60 * 60 * 24 * 30,
-        path: "/auth/*",
+        path: "/",
       });
       /* setCookie(undefined, "hubLocalAuth.refreshToken", refreshToken, {
         maxAge: 60 * 60 * 24 * 30,
