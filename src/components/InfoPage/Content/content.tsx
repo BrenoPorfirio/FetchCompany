@@ -16,11 +16,11 @@ export function Content() {
     };
 
     const contentItems = [
-        { text: "Desperte o Poder do Controle: Gerencie usuários com eficiência, empresas com maestria e transforme a gestão para o próximo nível! ", icon: <UsersThree size={32} color="#000" /> },
+        { text: "Desperte o Poder do Controle: Gerencie usuários com eficiência, empresas com maestria e transforme a gestão para o próximo nível! ", icon: <UsersThree size={32} color="#FFF" /> },
 
-        { text: "Domine o Mundo Empresarial: Usuários empoderados, empresas otimizadas, gestão aprimorada. Seu sucesso começa aqui! ", icon: <Buildings size={32} color="#000" /> },
+        { text: "Domine o Mundo Empresarial: Usuários empoderados, empresas otimizadas, gestão aprimorada. Seu sucesso começa aqui! ", icon: <Buildings size={32} color="#FFF" /> },
 
-        { text: "Enfrente Desafios com Confiança: usuários, empresas, excelência em cada detalhe. Domine o poder do gerenciamento e supere os obstáculos com facilidade! ", icon: <Archive size={32} color="#000" /> }
+        { text: "Enfrente Desafios com Confiança: usuários, empresas, excelência em cada detalhe. Domine o poder do gerenciamento e supere os obstáculos com facilidade! ", icon: <Archive size={32} color="#FFF" /> }
     ];
     return (
         <Container>

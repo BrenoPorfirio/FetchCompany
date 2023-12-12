@@ -5,6 +5,7 @@ import { AuthPage } from "../pages/AuthPage/AuthPage";
 import { protectedRoutes } from "./protected";
 import { publicRoutes } from "./public";
 import { InfoPage } from "../components/InfoPage/infoPage";
+import { About } from "../components/InfoPage/Header/about";
 
 export const AppRoutes = () => {
   const { user } = useContext(AuthContext);
@@ -13,6 +14,7 @@ export const AppRoutes = () => {
     { path: "/", element: <InfoPage /> },
     { path: "/auth/*", element: <AuthPage /> },
     { path: "*", element: <Navigate to="." /> },
+    {path: "/about", element: <About />}
   ];
 
   const routes = user ? protectedRoutes : publicRoutes;
