@@ -26,7 +26,16 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O FetchCompany é uma aplicação que tem as determinadas funções de criar/logar usuários, gerenciar empresas e seus determinados locais. 
+O FetchCompany é uma aplicação que permite gerenciar de forma super morderna seus usuários, empresas e locais.
+
+Com o FetchCompany você pode:
+
+```bash
+  Logar e criar usuários
+  Criar, listar, deletar, editar empresas (usuário logado)
+  Criar, listar, deletar, editar locais pertencentes a uma
+  empresa (usuário logado)
+```
 
 ## :memo: Execução
 
