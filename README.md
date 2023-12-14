@@ -21,7 +21,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - React + Vite
 - TypeScript
-- Git e Github
+- Material UI
 - Figma
 
 ## 💻 Projeto
